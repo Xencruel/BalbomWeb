@@ -1,0 +1,170 @@
+body {
+    background: url(Ana-Sayfa.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.logo img {
+    width: 100px;
+    margin-top: 10px;
+}
+#tag{
+    
+    font-size: 1.2em;
+    text-shadow: #222 1px 1px 2px;
+    text-align: left;
+    margin-top: 10px;
+    position: absolute;
+    left: 50px;
+    top: 10;
+    
+    
+   
+ 
+
+    
+}
+
+header {
+    background: #0073e6;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: #222 1px 1px 2px;
+    
+}
+
+#social-media{
+    position: absolute;
+    top: 780px;
+    padding: 10px;
+    right: 50px;
+    position: fixed;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+h1#title1 {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+h2#title2 {
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: #222 1px 1px 2px;
+}
+
+video {
+    display: block;
+    margin: 20px auto;
+    box-shadow: 1px 1px 8px #0073e6;
+    max-width: 90%;
+}
+
+#Game, #About, #Subscription, #Contact {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+.subscription-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 100px;
+}
+
+footer {
+    background: #222;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    video {
+        width: 100%;
+    }
+    
+    button {
+        width: 90%;
+    }
+    
+    form input, form textarea {
+        width: 90%;
+    }
+}
