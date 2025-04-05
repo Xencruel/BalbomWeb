@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperN0mania</title>
+    <link rel="stylesheet" href="dinocss.css">
+</head>
+<body>
+    <h1>Game Reward</h1>
+    <div id="character-selection">
+        <label>Karakter Seç:</label>
+        <button onclick="selectCharacter('cat')">Kedi</button>
+        <button onclick="selectCharacter('dog')">Köpek</button>
+    </div>
+    <canvas id="gameCanvas" width="800" height="300"></canvas>
+    
+    <div id="score-container">
+        Skor: <span id="score">0</span>
+        
+    </div>
+    
+
+    
+    <div id="start-over" class="hidden">
+        <h2>Welcome!!!</h2>
+        <p>Score: <span id="score">0</span></p>
+        <button id="start-btn" onclick="startGame()">START</button>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h2>Game Over</h2>
+        <p>Score: <span id="final-score">0</span></p>
+        <button id="restart-btn" onclick="restartGame()">Restart</button>
+        <button id="exist-btn"><a href="index.html">EXIST</a> </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
